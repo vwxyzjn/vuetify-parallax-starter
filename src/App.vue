@@ -9,7 +9,7 @@
         <v-parallax :src="require('@/assets/background1.jpg')" height="380">
           <v-layout column align-center justify-center>
             <h2 class="teal--text text--lighten-2 mb-2">Parallax Template</h2>
-            <div class="white--text headline mb-3">A modern responsive front-end framework based on Material Design</div>
+            <div class="white--text headline mb-3 text-xs-center">A modern responsive front-end framework based on Material Design</div>
             <v-btn light large class="teal lighten-2 white--text">Get Started</v-btn>
           </v-layout>
         </v-parallax>
@@ -19,7 +19,7 @@
             <v-flex xs12 sm4>
               <v-card class="elevation-0">
                 <v-card-media height="45px" class="text-xs-center">
-                  <v-icon x-large class="blue--text">flash_on</v-icon>
+                  <v-icon x-large class="brown--text">flash_on</v-icon>
                 </v-card-media>
                 <v-card-title primary-title>
                   <div class="headline text-xs-center" style="width:100%">Speeds up development</div>
@@ -36,7 +36,7 @@
             <v-flex xs12 sm4>
               <v-card class="elevation-0">
                 <v-card-media height="45px" class="text-xs-center">
-                  <v-icon x-large class="blue--text">group</v-icon>
+                  <v-icon x-large class="brown--text">group</v-icon>
                 </v-card-media>
                 <v-card-title primary-title>
                   <div class="headline text-xs-center" style="width:100%">User Experience Focused</div>
@@ -54,7 +54,7 @@
             <v-flex xs12 sm4>
               <v-card class="elevation-0">
                 <v-card-media height="45px" class="text-xs-center">
-                  <v-icon x-large class="blue--text">settings</v-icon>
+                  <v-icon x-large class="brown--text">settings</v-icon>
                 </v-card-media>
                 <v-card-title primary-title>
                   <div class="headline text-xs-center" style="width:100%">Easy to work with</div>
@@ -74,7 +74,7 @@
       <section>
         <v-parallax :src="require('@/assets/background2.jpg')" height="380">
           <v-layout column align-center justify-center>
-            <h4 class="white--text">A modern responsive front-end framework based on Material Design</h4>
+            <div class="headline white--text text-xs-center">A modern responsive front-end framework based on Material Design</div>
           </v-layout>
         </v-parallax>
       </section>
@@ -105,25 +105,25 @@
       <section>
         <v-parallax :src="require('@/assets/background3.jpg')" height="380">
           <v-layout column align-center justify-center>
-            <h4 class="white--text">A modern responsive front-end framework based on Material Design</h4>
+            <div class="headline white--text text-xs-center">A modern responsive front-end framework based on Material Design</div>
           </v-layout>
         </v-parallax>
       </section>
 
 
       <div id="footer" class="teal darken-1">
-        <v-layout row wrap style="width:70%;margin:auto" class="my-5">
+        <v-layout row wrap id="footer-layout" class="my-3">
           <v-flex xs12 sm6>
-            <div class="headline white--text">Company Bio</div>
-            <div class="white--text mt-3">
+            <div class="headline white--text ml-3">Company Bio</div>
+            <div class="white--text my-3 ml-3">
               We are a team of college students working on this project like 
               it's our full time job. Any amount would help support and continue 
               development on this project and is greatly appreciated.
             </div>
           </v-flex>
           <v-flex xs12 sm3>
-            <div class="headline white--text">Settings</div>
-            <div class="white--text mt-3">
+            <div class="headline white--text ml-3">Settings</div>
+            <div class="white--text my-3 ml-3">
               <a>Link1</a> <br>
               <a>Link2</a> <br>
               <a>Link3</a> <br>
@@ -131,8 +131,8 @@
             </div>
           </v-flex>
           <v-flex xs12 sm3>
-            <div class="headline white--text">Connect</div>
-            <div class="white--text mt-3">
+            <div class="headline white--text ml-3">Connect</div>
+            <div class="white--text my-3 ml-3">
               <a>Link1</a> <br>
               <a>Link2</a> <br>
               <a>Link3</a> <br>
@@ -142,9 +142,9 @@
         </v-layout>
       </div>
       <footer class="teal darken-2">
-        <v-layout row wrap style="width:70%;margin:auto" class="my-2">
+        <v-layout row wrap style class="my-2" id="footer-layout">
           <v-flex xs12>
-            <div class="white--text">
+            <div class="white--text ml-3">
               Made by Costa Huang
             </div>
           </v-flex>
@@ -169,18 +169,28 @@
 </style>
 
 <style>
-.toolbar__title {
-  margin-left: 15%;
+@media (min-width: 800px) {
+  .toolbar__title {
+    margin-left: 15%;
+  }
+  #content {
+    width: 70%;
+    margin: auto;
+  }
+  #footer-layout {
+    width:70%!important;
+    margin:auto;
+  }
+}
+
+#footer-layout {
+  width: 100%;
 }
 
 #subtitle {
   font-weight: 200!important;
 }
 
-#content {
-  width: 70%;
-  margin: auto;
-}
 
 #footer {
   overflow: auto;
