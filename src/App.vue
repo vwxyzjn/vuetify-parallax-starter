@@ -10,7 +10,7 @@
           <v-layout column align-center justify-center>
             <h2 class="teal--text text--lighten-2 mb-2">Parallax Template</h2>
             <div class="white--text headline mb-3 text-xs-center">A modern responsive front-end framework based on Material Design</div>
-            <v-btn light large class="teal lighten-2 white--text">Get Started</v-btn>
+            <v-btn light large class="teal lighten-2 white--text" href="https://github.com/vwxyzjn/vuetify-parallax-starter">Get Started</v-btn>
           </v-layout>
         </v-parallax>
 
@@ -145,7 +145,7 @@
         <v-layout row wrap style class="my-2" id="footer-layout">
           <v-flex xs12>
             <div class="white--text ml-3">
-              Made by Costa Huang
+              Made by <span class="grey--text text--lighten-2">Costa Huang</span>
             </div>
           </v-flex>
         </v-layout>
