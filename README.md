@@ -1,6 +1,7 @@
 # vuetify-parallax-starter
 
-> A Vue.js project
+This is a landing starter template for vuetify. The design idea comes from 
+[Parallax Template](http://materializecss.com/templates/parallax-template/preview.html)
 
 ## Build Setup
 
