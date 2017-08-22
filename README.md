@@ -3,6 +3,8 @@
 This is a landing starter template for vuetify. The design idea comes from 
 [Parallax Template](http://materializecss.com/templates/parallax-template/preview.html)
 
+[Live Demo](https://codepen.io/vwxyzjn/pen/gxzgaJ)
+
 ## Build Setup
 
 ``` bash
